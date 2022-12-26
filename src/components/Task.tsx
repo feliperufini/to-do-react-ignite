@@ -6,9 +6,11 @@ function handleDeleteTask() {
 
 export function Task() {
   return (
-    <div>
-      <input type="checkbox" />
-      <p>Tarefa</p>
+    <div className="flex justify-between mb-4 p-2 rounded-lg bg-zinc-800">
+      <div className="flex gap-4">
+        <input type="checkbox" />
+        <p>Tarefa</p>
+      </div>
       <button onClick={handleDeleteTask}>
         <Trash size={24} />
       </button>
